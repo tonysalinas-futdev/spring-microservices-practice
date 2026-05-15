@@ -6,7 +6,8 @@ spring:
       server:
         git:
           uri: git@github.com:tonysalinas-futdev/spring-microservices-practice.git
-          search-paths: config-data
+          search-paths: config_data
+          default-label: main
 
 
   security:
