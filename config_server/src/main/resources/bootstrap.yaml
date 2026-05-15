@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tonysalinas-futdev/spring-microservices-practice.git
+          search-paths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t
+
+server:
+  port: 8099
