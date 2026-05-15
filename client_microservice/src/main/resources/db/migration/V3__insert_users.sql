@@ -1,0 +1,1 @@
+INSERT INTO users(id,full_name,email,age,password,role_id)VALUES (748,'Juan Carlos Chao','carlos@gmail.com',24,'abcdd1234$',1),(749,'Juan Antonio Chao','tony@gmail.com',22,'abcdd1234#',2);
