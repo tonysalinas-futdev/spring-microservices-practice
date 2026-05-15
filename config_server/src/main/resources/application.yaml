@@ -5,14 +5,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tonysalinas-futdev/spring-microservices-practice.git
+          uri: git@github.com:tonysalinas-futdev/spring-microservices-practice.git
           search-paths: config-data
-          username: ${GIT_USER}
-          password: ${GIT_PASSWORD}
+
+
   security:
     user:
       name: root
       password: s3cr3t
+  config:
+    import: optional:file:.../../.env[.properties],optional:file:./.env[.properties]
 
 server:
   port: 8099
