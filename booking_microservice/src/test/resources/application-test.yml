@@ -20,3 +20,6 @@ spring:
         show_sql: true
         use_sql_comments: false
         format_sql: false
+  cloud:
+    config:
+      enabled: false
