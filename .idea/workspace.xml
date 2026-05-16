@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a2a15c2-6c1d-459a-9a0e-88f3853f27b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_data/booking_microservice.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/booking_microservice.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver_microservice/src/main/java/com/tony/microservices/MicroservicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/src/main/java/com/tony/microservices/MicroservicesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_data/user_microservice.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/user_microservice.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <workItem from="1778871291563" duration="301000" />
       <workItem from="1778878943251" duration="251000" />
       <workItem from="1778881678715" duration="346000" />
-      <workItem from="1778902666036" duration="3024000" />
+      <workItem from="1778902666036" duration="3370000" />
     </task>
     <servers />
   </component>
