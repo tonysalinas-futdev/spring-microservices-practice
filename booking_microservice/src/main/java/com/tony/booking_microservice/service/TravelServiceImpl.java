@@ -1,20 +1,24 @@
 package com.tony.booking_microservice.service;
 
+import com.tony.booking_microservice.client.DriverClient;
 import com.tony.booking_microservice.dtos.CreateTravelDTO;
 import com.tony.booking_microservice.enums.Status;
 import com.tony.booking_microservice.exceptions.NotFoundException;
 import com.tony.booking_microservice.exceptions.TravelCreationException;
+import com.tony.booking_microservice.model.Driver;
 import com.tony.booking_microservice.model.Travel;
 import com.tony.booking_microservice.repository.TravelRepository;
 import jakarta.transaction.Transactional;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class TravelServiceImpl implements TravelService {
   private final TravelRepository repo;
+  private final DriverClient driverClient;
 
   @Override
   public List<Travel> getByStatus(Status status) {
@@ -45,8 +49,13 @@ public class TravelServiceImpl implements TravelService {
   @Override
   public Travel updateTravelDriver(Long driverId, Long travelId) {
     Travel travel = getByIdOrThrow(travelId);
+    if (!driverClient.getById(driverId).getStatusCode().equals(HttpStatusCode.valueOf(200))){
+        throw new TravelCreationException("Driver not found");
+    }
     travel.setDriverId(driverId);
     repo.saveAndFlush(travel);
+    driverClient.updateDriverStatus(driverId,false);
+    updateTravelStatus(Status.IN_PROGRESS,travelId);
     return travel;
   }
 

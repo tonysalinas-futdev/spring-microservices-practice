@@ -13,4 +13,5 @@ public interface TravelRepository extends JpaRepository<Travel, Long> {
   List<Travel> findByStatus(Status status);
 
   List<Travel> findByClientId(Long clientId);
+
 }

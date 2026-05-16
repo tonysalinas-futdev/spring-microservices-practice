@@ -15,4 +15,5 @@ public interface TravelService {
   public Travel updateTravelStatus(Status status, Long travelId);
 
   public Travel getByIdOrThrow(Long id);
+
 }
