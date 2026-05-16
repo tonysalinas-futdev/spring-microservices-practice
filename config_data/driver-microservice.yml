@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: driver_microservice
+    name: driver-microservice
   h2:
     console:
       enabled: true

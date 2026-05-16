@@ -7,15 +7,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
-@Service
+
+
 @FeignClient("driver-microservice")
-@RequestMapping("api/v1/drivers")
 public interface DriverClient {
     @GetMapping("/{id}")
     public ResponseEntity<Driver> getById(@PathVariable Long id);
 
     @PutMapping("driver/{id}/status")
-    public void updateDriverStatus(@PathVariable Long id, Boolean status);
+    public void updateDriverStatus(@PathVariable Long id, @RequestBody Boolean status);
 
 
 }

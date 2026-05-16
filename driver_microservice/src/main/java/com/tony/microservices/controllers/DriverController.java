@@ -45,7 +45,7 @@ public class DriverController {
 
   @PutMapping("driver/{id}/status")
   @ResponseStatus(HttpStatus.OK)
-  public void updateDriverStatus(@PathVariable Long id, Boolean status) {
+  public void updateDriverStatus(@PathVariable Long id, @RequestBody Boolean status) {
     service.changeAvaiability(status, id);
   }
 }
