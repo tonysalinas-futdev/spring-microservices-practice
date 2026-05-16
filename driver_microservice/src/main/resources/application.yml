@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: driver_microservice
+    name: driver-microservice
   cloud:
     config:
       username: root

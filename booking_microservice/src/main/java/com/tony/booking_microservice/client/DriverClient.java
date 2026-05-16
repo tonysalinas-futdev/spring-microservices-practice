@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 @Service
-@FeignClient("driver_microservice")
+@FeignClient("driver-microservice")
 @RequestMapping("api/v1/drivers")
 public interface DriverClient {
     @GetMapping("/{id}")
