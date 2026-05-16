@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 
-@FeignClient("driver-microservice")
+@FeignClient(name = "driver-microservice")
 public interface DriverClient {
     @GetMapping("/{id}")
     public ResponseEntity<Driver> getById(@PathVariable Long id);

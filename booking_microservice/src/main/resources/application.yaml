@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: booking_microservice
+    name: booking-microservice
   cloud:
     config:
       username: root
@@ -10,4 +10,4 @@ spring:
     import: configserver:http://localhost:8099
 
 server:
-  port: 8081
+  port: 8084
