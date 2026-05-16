@@ -6,72 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9a2a15c2-6c1d-459a-9a0e-88f3853f27b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/booking_microservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking_microservice/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/booking_microservice/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking_microservice/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/booking_microservice/src/test/resources/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/ClientMicroserviceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/controllers/AuthControllers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/controllers/UserAdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/dtos/AdminCreateUserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/dtos/AuthResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/dtos/CreateUserBySignUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/dtos/ErrorResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/dtos/GetUserProfileDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/dtos/LoginDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/enums/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/enums/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/enums/TokenType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/exceptions/InvalidTokenException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/exceptions/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/exceptions/UserCreationError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/handler/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/model/Permissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/model/Roles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/model/Token.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/repository/PermissionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/repository/TokenRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/security/config/AuthConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/security/config/JwtProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/security/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/security/filters/JwtAuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/services/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/services/RoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/services/TokenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/services/TokenValidationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/services/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/utils/CookieBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/utils/JwtTokenParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/utils/JwtTokenProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/utils/SecretKeyProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/java/com/tony/user_microservice/utils/TokenExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/resources/db/migration/V1__Initialization.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/resources/db/migration/V2__insert_roles_and_permissions.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/main/resources/db/migration/V3__insert_users.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/java/com/tony/user_microservice/ClientMicroserviceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/java/com/tony/user_microservice/services/TestUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/java/com/tony/user_microservice/utils/TestTokenProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/java/com/tony/user_microservice/utils/TestTokenUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/resources/application-test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/resources/clean.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_microservice/src/test/resources/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_data/driver_microservice.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/driver_microservice.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver_microservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver_microservice/src/test/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/src/test/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/registry-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +65,7 @@
       <workItem from="1778871291563" duration="301000" />
       <workItem from="1778878943251" duration="251000" />
       <workItem from="1778881678715" duration="346000" />
-      <workItem from="1778902666036" duration="1812000" />
+      <workItem from="1778902666036" duration="2660000" />
     </task>
     <servers />
   </component>
