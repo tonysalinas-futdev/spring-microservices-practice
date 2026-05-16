@@ -8,3 +8,6 @@ spring:
       password: s3cr3t
   config:
     import: configserver:http://localhost:8099
+
+server:
+  port: 8081
