@@ -1,0 +1,26 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8077/eureka/
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.netty: DEBUG
+
+
+server:
+  port: 8222
