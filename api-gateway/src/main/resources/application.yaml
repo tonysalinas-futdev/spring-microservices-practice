@@ -1,5 +1,10 @@
 spring:
   application:
     name: api-gateway
+
+  cloud:
+    config:
+      username: root
+      password: s3cr3t
   config:
     import: configserver:http://localhost:8099
