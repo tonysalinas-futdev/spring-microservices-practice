@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: admin-server
+server:
+  port: 8444
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

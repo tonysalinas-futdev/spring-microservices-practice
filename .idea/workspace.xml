@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a2a15c2-6c1d-459a-9a0e-88f3853f27b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/booking_microservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking_microservice/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/booking_microservice/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_data/booking-microservice.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/booking-microservice.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_data/driver-microservice.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/driver-microservice.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_data/registry-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/registry-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_data/user-microservice.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/user-microservice.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver_microservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
       <workItem from="1778902666036" duration="5366000" />
       <workItem from="1778937624195" duration="4250000" />
       <workItem from="1779115063100" duration="8090000" />
-      <workItem from="1779195919110" duration="1261000" />
+      <workItem from="1779195919110" duration="2584000" />
     </task>
     <servers />
   </component>
