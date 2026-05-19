@@ -12,3 +12,9 @@ eureka:
 
 server:
   port: 8077
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
