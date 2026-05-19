@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9a2a15c2-6c1d-459a-9a0e-88f3853f27b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/tony/api_gateway/security/config/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/tony/api_gateway/security/config/JwtProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/tony/api_gateway/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/tony/api_gateway/security/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config_data/api-gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/api-gateway.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_data/user-microservice.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/user-microservice.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/src/main/resources/db/migration/V1__Initialization.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/src/main/resources/db/migration/V1__Initialization.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,7 @@
       <workItem from="1778937624195" duration="4250000" />
       <workItem from="1779115063100" duration="8090000" />
       <workItem from="1779195919110" duration="2669000" />
-      <workItem from="1779212595000" duration="4511000" />
+      <workItem from="1779212595000" duration="6541000" />
     </task>
     <servers />
   </component>

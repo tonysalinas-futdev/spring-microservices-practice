@@ -28,5 +28,6 @@ logging:
 
 server:
   port: 8222
+
 jwt:
   secret: ${JWT_SECRET}
