@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9a2a15c2-6c1d-459a-9a0e-88f3853f27b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver_microservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/driver_microservice/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_data/api-gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/api-gateway.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/src/main/java/com/tony/user_microservice/utils/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/src/main/java/com/tony/user_microservice/utils/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user_microservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;changes&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Tony/Desktop/spring-microservices&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
@@ -66,7 +70,8 @@
       <workItem from="1778902666036" duration="5366000" />
       <workItem from="1778937624195" duration="4250000" />
       <workItem from="1779115063100" duration="8090000" />
-      <workItem from="1779195919110" duration="2584000" />
+      <workItem from="1779195919110" duration="2669000" />
+      <workItem from="1779212595000" duration="2834000" />
     </task>
     <servers />
   </component>

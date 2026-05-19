@@ -6,5 +6,8 @@ spring:
     config:
       username: root
       password: s3cr3t
+      charset:
+
   config:
     import: configserver:http://localhost:8099
+
