@@ -26,10 +26,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-
+/*
 @Slf4j
 @Component
 @RequiredArgsConstructor
+
 public class JwtAuthFilter extends OncePerRequestFilter {
   private final UserDetailsService userDetailsService;
   private final TokenValidationService validationService;
@@ -65,4 +66,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     filterChain.doFilter(request, response);
   }
+
 }
+*/

@@ -21,29 +21,38 @@ public class JwtFilter implements GlobalFilter{
     public Mono<Void>filter(
             ServerWebExchange exchange,
             GatewayFilterChain chain
-    ){
-        Principal authentication=exchange.getPrincipal().block();
+    ){ return exchange.getPrincipal()
+            .cast(JwtAuthenticationToken.class)
+            .flatMap(jwtAuth -> {
 
-        if (authentication instanceof JwtAuthenticationToken jwtAuth){
-            Jwt jwt=jwtAuth.getToken();
-             String userEmail=jwt.getSubject();
-             String userId=jwt.getClaim("id");
-             String role=jwt.getClaim("role");
-            List<String> permissions=jwt.getClaimAsStringList("permissions");
+                Jwt jwt = jwtAuth.getToken();
 
-            ServerHttpRequest changedRequest=exchange.getRequest().mutate()
-                    .header("X-User-Id",userId)
-                    .header("X-UserEmail",userEmail)
-                    .header("X-UserRole",role)
-                    .header("X-Permissions",String.join(",",permissions))
-                    .build();
+                String userEmail = jwt.getSubject();
+                String userId = jwt.getClaim("id");
+                String role = jwt.getClaim("role");
 
-            ServerWebExchange newExchange=exchange.mutate()
-                    .request(changedRequest)
-                    .build();
-            return chain.filter(newExchange);
-        }
-        return chain.filter(exchange);
+                List<String> permissions =
+                        jwt.getClaimAsStringList("permissions");
 
+                ServerHttpRequest changedRequest =
+                        exchange.getRequest()
+                                .mutate()
+                                .header("X-User-Id", userId)
+                                .header("X-UserEmail", userEmail)
+                                .header("X-UserRole", role)
+                                .header(
+                                        "X-Permissions",
+                                        String.join(",", permissions)
+                                )
+                                .build();
+
+                ServerWebExchange newExchange =
+                        exchange.mutate()
+                                .request(changedRequest)
+                                .build();
+
+                return chain.filter(newExchange);
+            })
+            .switchIfEmpty(chain.filter(exchange));
     }
 }
