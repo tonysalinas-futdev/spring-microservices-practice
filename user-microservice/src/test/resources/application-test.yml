@@ -1,0 +1,21 @@
+
+spring:
+  config:
+    import: optional:file:./user-microservice/.env[.properties],optional:file:./.env[.properties]
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_TEST_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+  cloud:
+    config:
+      enabled: false
+jwt:
+  private-key: ${JWT_PRIVATE_KEY}
+  public-key: ${JWT_PUBLIC_KEY}

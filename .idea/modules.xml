@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring-microservices.iml" filepath="$PROJECT_DIR$/.idea/spring-microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/booking-microservice/microservices.booking-microservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/booking-microservice/microservices.booking-microservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/booking-microservice/microservices.booking-microservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/booking-microservice/microservices.booking-microservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.test.iml" />
     </modules>
   </component>
 </project>
