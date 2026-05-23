@@ -1,0 +1,9 @@
+rootProject.name="microservices"
+include 'admin-server'
+include 'api-gateway'
+include 'booking-microservice'
+include 'registry-service'
+include 'driver-microservice'
+include 'user-microservice'
+include 'config_server'
+include 'security-module'

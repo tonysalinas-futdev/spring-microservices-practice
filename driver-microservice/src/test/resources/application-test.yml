@@ -8,7 +8,6 @@ spring:
     driver-class-name: org.h2.Driver
     username: tony
     password:
-
   jpa:
     show-sql: true
     hibernate:
@@ -19,6 +18,11 @@ spring:
         show_sql: true
         use_sql_comments: false
         format_sql: false
-  cloud:
-    config:
-      enabled: false
+  boot:
+    admin:
+      client:
+        enabled: false
+
+eureka:
+  client:
+    enabled: false

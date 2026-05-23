@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="microservices.booking-microservice.main" />
+        <module name="microservices.user-microservice.test" />
+        <module name="microservices.user-microservice.main" />
+        <module name="microservices.driver-microservice.main" />
+        <module name="microservices.driver-microservice.test" />
+        <module name="microservices.booking-microservice.test" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel target="21" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservices.admin-server" options="-parameters" />
+      <module name="microservices.admin-server.main" options="-parameters" />
+      <module name="microservices.admin-server.test" options="-parameters" />
       <module name="microservices.api-gateway" options="-parameters" />
       <module name="microservices.api-gateway.main" options="-parameters" />
       <module name="microservices.api-gateway.test" options="-parameters" />
+      <module name="microservices.booking-microservice" options="-parameters" />
+      <module name="microservices.booking-microservice.main" options="-parameters" />
+      <module name="microservices.booking-microservice.test" options="-parameters" />
       <module name="microservices.config_server" options="-parameters" />
       <module name="microservices.config_server.main" options="-parameters" />
       <module name="microservices.config_server.test" options="-parameters" />
+      <module name="microservices.driver-microservice" options="-parameters" />
+      <module name="microservices.driver-microservice.main" options="-parameters" />
+      <module name="microservices.driver-microservice.test" options="-parameters" />
       <module name="microservices.registry-service" options="-parameters" />
       <module name="microservices.registry-service.main" options="-parameters" />
       <module name="microservices.registry-service.test" options="-parameters" />
+      <module name="microservices.security-module" options="-parameters" />
+      <module name="microservices.security-module.main" options="-parameters" />
+      <module name="microservices.security-module.test" options="-parameters" />
+      <module name="microservices.user-microservice" options="-parameters" />
+      <module name="microservices.user-microservice.main" options="-parameters" />
+      <module name="microservices.user-microservice.test" options="-parameters" />
     </option>
   </component>
 </project>

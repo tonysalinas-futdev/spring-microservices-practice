@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: security-module
+  config:
+    import: optional:file:./security-module/.env[.properties],optional:file:./.env[.properties]
+
+jwt:
+  public-key:${JWT_PUBLIC_KEY}

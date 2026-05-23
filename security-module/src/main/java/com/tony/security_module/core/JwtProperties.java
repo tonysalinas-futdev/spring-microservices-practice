@@ -1,4 +1,4 @@
-package com.tony.api_gateway.security.config;
+package com.tony.security_module.core;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -8,13 +8,13 @@ import org.springframework.stereotype.Component;
 public class JwtProperties {
 
 
-    private String secret;
-    public String getSecret() {
-        return secret;
+    private String publicKey;
+    public String getPublicKey() {
+        return publicKey;
     }
 
-    public void setSecret(String secret) {
-        this.secret = secret;
+    public void setPublicKey(String secret) {
+        this.publicKey = secret;
     }
 
 }

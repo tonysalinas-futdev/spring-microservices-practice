@@ -3,7 +3,7 @@ spring:
     name: config_server
 
   config:
-    import: optional:file:.../../.env[.properties],optional:file:./.env[.properties]
+    import: optional:file:./config_server/.env[.properties],optional:file:./.env[.properties]
 
   profiles:
     active: ${ACTIVE_PROFILE}

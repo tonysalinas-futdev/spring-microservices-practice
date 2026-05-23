@@ -30,7 +30,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-
 public class JwtAuthFilter extends OncePerRequestFilter {
   private final UserDetailsService userDetailsService;
   private final TokenValidationService validationService;
@@ -43,7 +42,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
       @NonNull HttpServletResponse response,
       @NonNull FilterChain filterChain)
       throws ServletException, IOException {
-    if (request.getServletPath().contains("/auth")) {
+    if (request.getServletPath().contains("/auth") || request.getServletPath().contains("/actuator")) {
       filterChain.doFilter(request, response);
       return;
     }

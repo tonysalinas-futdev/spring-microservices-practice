@@ -4,6 +4,9 @@ import com.tony.microservices.dto.ErrorResponseDTO;
 import com.tony.microservices.exceptions.BussinessException;
 import com.tony.microservices.exceptions.NotFoundExceptions;
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -11,19 +14,25 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
   @ExceptionHandler(BussinessException.class)
-  public ErrorResponseDTO handleBussinessException(
+  public ResponseEntity<ErrorResponseDTO> handleBussinessException(
       HttpServletRequest request, BussinessException ex) {
-    return new ErrorResponseDTO(ex.getMessage(), request.getRequestURI(), 400);
+    return ResponseEntity.badRequest().body(new ErrorResponseDTO(ex.getMessage(), request.getRequestURI(), 400));
   }
 
   @ExceptionHandler(NotFoundExceptions.class)
-  public ErrorResponseDTO handleNotFoundException(
+  public ResponseEntity<ErrorResponseDTO> handleNotFoundException(
       HttpServletRequest request, NotFoundExceptions ex) {
-    return new ErrorResponseDTO(ex.getMessage(), request.getRequestURI(), 404);
+      return ResponseEntity.status(404).body(new ErrorResponseDTO(ex.getMessage(), request.getRequestURI(), 404));
   }
 
   @ExceptionHandler(Exception.class)
-  public ErrorResponseDTO handleException(HttpServletRequest request, Exception ex) {
-    return new ErrorResponseDTO(ex.getMessage(), request.getRequestURI(), 500);
+  public ResponseEntity<ErrorResponseDTO> handleException(HttpServletRequest request, Exception ex) {
+      if (ex instanceof AccessDeniedException){
+          throw  (AccessDeniedException) ex;
+      }
+      if (ex instanceof AuthenticationException){
+          throw  (AuthenticationException) ex;
+      }
+    return ResponseEntity.status(500).body(new ErrorResponseDTO(ex.getMessage(), request.getRequestURI(), 500));
   }
 }

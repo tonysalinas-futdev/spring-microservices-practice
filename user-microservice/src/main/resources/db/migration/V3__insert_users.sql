@@ -1,1 +1,1 @@
-INSERT INTO users(id,full_name,email,age,password,role_id)VALUES (748,'Juan Carlos Chao','carlos@gmail.com',24,'abcdd1234$',1),(749,'Juan Antonio Chao','tony@gmail.com',22,'abcdd1234#',2);
+INSERT INTO users(id,full_name,email,age,password,role_id)VALUES (748,'Juan Carlos Chao','carlos@gmail.com',24,'$2a$10$K5MB8foYjPrFIN5AnYiKb.t3hTidbujzS3clWpHsqOIyW4pz3UO0K',1),(749,'Juan Antonio Chao','tony@gmail.com',22,'$2a$10$K5MB8foYjPrFIN5AnYiKb.t3hTidbujzS3clWpHsqOIyW4pz3UO0K',2);

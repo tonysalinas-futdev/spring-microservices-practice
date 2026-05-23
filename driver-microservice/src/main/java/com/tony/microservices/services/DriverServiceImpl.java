@@ -8,6 +8,8 @@ import com.tony.microservices.exceptions.NotFoundExceptions;
 import com.tony.microservices.repository.DriverRepository;
 import java.util.List;
 import java.util.Optional;
+
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,7 @@ import org.springframework.stereotype.Service;
 public class DriverServiceImpl implements DriverService {
   private final DriverRepository repo;
 
+  @Transactional
   @Override
   public Driver createDriver(CreateDriverDTO data) {
     if (repo.findByName(data.getName()).isPresent()) {
@@ -43,6 +46,7 @@ public class DriverServiceImpl implements DriverService {
     repo.delete(driver);
   }
 
+  @Transactional
   @Override
   public Driver updateDriver(UpdateDriverDTO data, Long id) {
     Driver driver = getByIdOrThrow(id);

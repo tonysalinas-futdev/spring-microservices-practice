@@ -6,6 +6,19 @@
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="#GRADLE_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/admin-server" />
+            <option value="$PROJECT_DIR$/api-gateway" />
+            <option value="$PROJECT_DIR$/booking-microservice" />
+            <option value="$PROJECT_DIR$/config_server" />
+            <option value="$PROJECT_DIR$/driver-microservice" />
+            <option value="$PROJECT_DIR$/registry-service" />
+            <option value="$PROJECT_DIR$/security-module" />
+            <option value="$PROJECT_DIR$/user-microservice" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

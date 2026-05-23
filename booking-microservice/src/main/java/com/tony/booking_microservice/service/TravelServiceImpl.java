@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class TravelServiceImpl implements TravelService {
   private final TravelRepository repo;
-  private final DriverClient driverClient;
+
 
   @Override
   public List<Travel> getByStatus(Status status) {
@@ -46,15 +46,12 @@ public class TravelServiceImpl implements TravelService {
     return travel;
   }
 
+  @Transactional
   @Override
   public Travel updateTravelDriver(Long driverId, Long travelId) {
     Travel travel = getByIdOrThrow(travelId);
-    if (!driverClient.getById(driverId).getStatusCode().equals(HttpStatusCode.valueOf(200))){
-        throw new TravelCreationException("Driver not found");
-    }
     travel.setDriverId(driverId);
     repo.saveAndFlush(travel);
-    driverClient.updateDriverStatus(driverId,false);
     updateTravelStatus(Status.IN_PROGRESS,travelId);
     return travel;
   }

@@ -9,5 +9,6 @@ spring:
       charset:
 
   config:
-    import: configserver:http://localhost:8099
+    import: configserver:http://localhost:8099,optional:file:./api-gateway/.env[.properties],optional:file:./.env[.properties]
+
 

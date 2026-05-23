@@ -20,7 +20,7 @@ public class UserAdminController {
     private final UserService service;
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN') and hasAuthority('READ_USER')")
     public ResponseEntity<User> getUserById(@PathVariable Long id){
         return ResponseEntity.ok(service.getByIdOrThrow(id));
     }
@@ -37,6 +37,7 @@ public class UserAdminController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @PreAuthorize("hasRole('ADMIN') and hasAuthority('DELETE_USER')")
     public void deleteUser(@PathVariable Long id){
         service.deleteUser(id);
 

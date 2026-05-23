@@ -7,7 +7,7 @@ spring:
       username: root
       password: s3cr3t
   config:
-    import: configserver:http://localhost:8099
+    import: optional:configserver:http://localhost:8099,optional:file:./booking-microservice/.env[.properties],optional:file:./.env[.properties]
   boot:
     admin:
       client:

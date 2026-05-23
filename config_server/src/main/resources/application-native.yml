@@ -4,7 +4,7 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///C:/Users/Tony/Desktop/spring-microservices/config_data
+          search-locations: file:${LOCAL_PATH}
 
 
   security:
