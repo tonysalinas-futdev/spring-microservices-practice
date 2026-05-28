@@ -11,8 +11,9 @@
         <module name="microservices.user-microservice.test" />
         <module name="microservices.user-microservice.main" />
         <module name="microservices.driver-microservice.main" />
-        <module name="microservices.driver-microservice.test" />
         <module name="microservices.booking-microservice.test" />
+        <module name="microservices.driver-microservice.test" />
+        <module name="microservices.orchestrator-service.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
@@ -34,6 +35,9 @@
       <module name="microservices.driver-microservice" options="-parameters" />
       <module name="microservices.driver-microservice.main" options="-parameters" />
       <module name="microservices.driver-microservice.test" options="-parameters" />
+      <module name="microservices.orchestrator-service" options="-parameters" />
+      <module name="microservices.orchestrator-service.main" options="-parameters" />
+      <module name="microservices.orchestrator-service.test" options="-parameters" />
       <module name="microservices.registry-service" options="-parameters" />
       <module name="microservices.registry-service.main" options="-parameters" />
       <module name="microservices.registry-service.test" options="-parameters" />

@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: booking-microservice
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:8444
+        instance:
+          service-host-type: ip
   h2:
     console:
       enabled: true
@@ -37,6 +44,9 @@ eureka:
     prefer-ip-address: true
 
 management:
+
+  circuitbreakers:
+    enabled: true
   endpoints:
     web:
       exposure:
@@ -44,3 +54,29 @@ management:
 
 jwt:
   public-key: ${JWT_PUBLIC_KEY}
+
+
+
+
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      driver-microservice:
+        register-health-indicator: true
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 50
+        minimum-number-of-calls: 4
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state:
+          seconds: 5
+        permitted-number-of-calls-in-half-open-state: 2
+        sliding-window-size: 10
+        sliding-window-type: COUNT_BASED
+  retry:
+    instances:
+      driver-microservice:
+        max-attempts: 4
+        wait-duration:
+          seconds: 4

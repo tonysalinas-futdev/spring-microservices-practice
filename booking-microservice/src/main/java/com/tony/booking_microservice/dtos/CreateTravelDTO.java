@@ -9,27 +9,23 @@ import lombok.Setter;
 @Setter
 @Builder
 public class CreateTravelDTO {
-  private final Long clientId;
   private final double originLat;
   private final double originLon;
   private final double destinationLat;
   private final double destinationLon;
 
   public CreateTravelDTO(
-      Long clientId,
+
       double originLat,
       double originLon,
       double destinationLat,
       double destinationLon) {
-    if (clientId == null) {
-      throw new InvalidDataException("The client id cannot be null");
-    }
+
     if (!isValidCoordinates(originLat, originLon)
         && !isValidCoordinates(destinationLat, destinationLon)) {
       throw new InvalidDataException(
           "Latitude must be between -90 and 90 and longitude between -180 and 180");
     }
-    this.clientId = clientId;
     this.originLat = originLat;
     this.originLon = originLon;
     this.destinationLat = destinationLat;

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/booking-microservice/microservices.booking-microservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/booking-microservice/microservices.booking-microservice.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/driver-microservice/microservices.driver-microservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/orchestrator-service/microservices.orchestrator-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/orchestrator-service/microservices.orchestrator-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/user-microservice/microservices.user-microservice.test.iml" />
     </modules>

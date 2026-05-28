@@ -8,13 +8,17 @@ spring:
       password: s3cr3t
   config:
     import: optional:configserver:http://localhost:8099,optional:file:./booking-microservice/.env[.properties],optional:file:./.env[.properties]
-  boot:
-    admin:
-      client:
-        url: http://localhost:8444
-        instance:
-          service-host-type: ip
 
 
 server:
   port: 8084
+
+resilience4j:
+  timelimiter:
+    instances:
+      driver-mciroservice:
+        timeout-duration:
+          seconds: 10
+        cancel-running-future: true
+
+

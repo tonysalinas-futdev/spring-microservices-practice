@@ -8,7 +8,7 @@ import java.util.List;
 public interface TravelService {
   public List<Travel> getByStatus(Status status);
 
-  public Travel createTravel(CreateTravelDTO travelDTO);
+  public Travel createTravel(CreateTravelDTO travelDTO,String clientId);
 
   public Travel updateTravelDriver(Long driverId, Long travelId);
 
