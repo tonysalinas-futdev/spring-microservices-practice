@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/booking-microservice" />
             <option value="$PROJECT_DIR$/config_server" />
             <option value="$PROJECT_DIR$/driver-microservice" />
-            <option value="$PROJECT_DIR$/orchestrator-service" />
             <option value="$PROJECT_DIR$/registry-service" />
             <option value="$PROJECT_DIR$/security-module" />
             <option value="$PROJECT_DIR$/user-microservice" />

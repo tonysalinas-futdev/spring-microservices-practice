@@ -1,6 +1,7 @@
 package com.tony.user_microservice.controllers;
 
 import com.tony.user_microservice.dtos.AdminCreateUserDTO;
+import com.tony.user_microservice.enums.Role;
 import com.tony.user_microservice.model.User;
 import com.tony.user_microservice.services.UserService;
 import lombok.NonNull;
@@ -42,4 +43,19 @@ public class UserAdminController {
         service.deleteUser(id);
 
     }
+
+    @PutMapping("/role/{role}/id/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<User> addNewUserRole(@PathVariable Role role, @PathVariable Long id){
+        return ResponseEntity.ok(service.addRole(role,id));
+    }
+
+    @DeleteMapping("/role/{role}/id/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<User> deleteUserRole(@PathVariable Role role, @PathVariable Long id){
+        return ResponseEntity.ok(service.deleteRole(role,id));
+    }
+
 }

@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -22,8 +23,8 @@ public class TestTokenProvider {
     User getUserForTest(){
         Permissions permission=new Permissions(568L,"CREATE_USER", null);
         Roles rol= new Roles(5L, Role.CLIENT,Set.of(permission));
-        permission.setRoles(Set.of(rol));
-        return User.builder().id(4L).fullName("Juan Antonio Chao Salinas").email("kroosismo0202@gmail.com").rol(rol).build();
+        permission.setRoles(List.of(rol));
+        return User.builder().id(4L).fullName("Juan Antonio Chao Salinas").email("kroosismo0202@gmail.com").roles(Set.of(rol)).build();
 
     }
 

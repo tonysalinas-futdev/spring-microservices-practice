@@ -36,9 +36,10 @@ public class AuthConfig {
                                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
                 List<String> authorities = new ArrayList<>();
 
-                authorities.add("ROLE_" + user.getRol().getName());
+                authorities.addAll( user.getRoles().stream().map(role-> "ROLE_"+ role.getName()
+                ).toList());
 
-                user.getRol().getPermissions().forEach(p -> authorities.add(p.getName()));
+                user.getRoles().forEach(role->role.getPermissions().forEach(p->authorities.add(p.getName())));
 
                 return org.springframework.security.core.userdetails.User.builder()
                         .username(user.getEmail())

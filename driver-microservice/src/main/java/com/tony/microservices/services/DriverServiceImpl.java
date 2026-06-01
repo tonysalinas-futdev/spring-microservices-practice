@@ -5,10 +5,14 @@ import com.tony.microservices.dto.UpdateDriverDTO;
 import com.tony.microservices.entitys.Driver;
 import com.tony.microservices.exceptions.BussinessException;
 import com.tony.microservices.exceptions.NotFoundExceptions;
+import com.tony.microservices.feign.models.Role;
+import com.tony.microservices.feign.models.User;
+import com.tony.microservices.feign.service.UserService;
 import com.tony.microservices.repository.DriverRepository;
 import java.util.List;
 import java.util.Optional;
 
+import feign.FeignException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,28 +23,29 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class DriverServiceImpl implements DriverService {
   private final DriverRepository repo;
+  private final UserService userService;
 
-  @Transactional
-  @Override
-  public Driver registerAsDriver(Long userId){
-
-  };
 
   @Transactional
   @Override
   public Driver createDriver(CreateDriverDTO data) {
-    if (repo.findByName(data.getName()).isPresent()) {
+      User user=userService.getById(data.getUserId());
+    if (repo.findByName(user.getFullName()).isPresent()) {
         log.info("Failed to create driver with existing name");
-      throw new BussinessException("Client with name '" + data.getName() + "' already exists");
+      throw new BussinessException("Client with name '" + user.getFullName() + "' already exists");
 
     }
     Driver driver =
         Driver.builder()
-            .name(data.getName())
+            .name(user.getFullName())
             .licenseNumber(data.getLicenseNumber())
-            .available(false)
+            .available(true)
             .phone(data.getPhone())
             .build();
+
+
+    userService.addDriverRole(Role.DRIVER, user.getId());
+
     repo.saveAndFlush(driver);
     log.info("Created driver with id={} and name={}",driver.getId(),driver.getName());
     return driver;

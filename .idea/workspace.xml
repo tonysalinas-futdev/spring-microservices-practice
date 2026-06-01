@@ -5,29 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a2a15c2-6c1d-459a-9a0e-88f3853f27b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/tony/api_gateway/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/tony/api_gateway/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/client/DriverClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/feign/DriverClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/controllers/TravelControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/controllers/TravelControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/dtos/CreateTravelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/dtos/CreateTravelDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/model/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/model/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/service/TravelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/service/TravelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/service/TravelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/java/com/tony/booking_microservice/service/TravelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-microservice/src/test/java/com/tony/booking_microservice/service/TestTravelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-microservice/src/test/java/com/tony/booking_microservice/service/TestTravelService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config_data/booking-microservice.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/booking-microservice.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver-microservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/controllers/DriverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/controllers/DriverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/services/DriverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/services/DriverService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_data/driver-microservice.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config_data/driver-microservice.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/MicroservicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/MicroservicesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/dto/CreateDriverDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/dto/CreateDriverDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/handlers/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/handlers/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/services/DriverServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/main/java/com/tony/microservices/services/DriverServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver-microservice/src/test/java/com/tony/microservices/service/TestDriverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/driver-microservice/src/test/java/com/tony/microservices/service/TestDriverService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-module/src/main/java/com/tony/security_module/core/reactive/ReactiveJwtConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-module/src/main/java/com/tony/security_module/core/reactive/ReactiveJwtConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-module/src/main/java/com/tony/security_module/core/standard/JwtConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-module/src/main/java/com/tony/security_module/core/standard/JwtConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/ClientMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/ClientMicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/controllers/UserAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/controllers/UserAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/model/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/model/Permissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/security/config/AuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/security/config/AuthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/utils/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/tony/user_microservice/utils/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/resources/db/migration/V1__Initialization.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/resources/db/migration/V1__Initialization.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/test/java/com/tony/user_microservice/services/TestUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/test/java/com/tony/user_microservice/services/TestUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/test/java/com/tony/user_microservice/utils/TestTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/test/java/com/tony/user_microservice/utils/TestTokenProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -84,9 +83,16 @@
   &quot;keyToString&quot;: {
     &quot;Gradle.Build spring-microservices.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestDriverService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestDriverService.shouldCreateDriverSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestDriverService.shouldThrowBussinessExceptionWhenCreateDriverWithExistingName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestDriverService.whenChangeAvaiabilityThenUpdateDriverStatus.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TestTokenProvider.shouldCreateAccessTokenSuccessfully.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TestTravelService.shouldUpdateTravelDriverId.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TestUserService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestUserService.shouldAddNewRoleToUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestUserService.shouldCreateUserByAdminSuccessfully.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestUserService.shouldFailAddExistingRoleToUser.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -100,7 +106,7 @@
     &quot;Spring Boot.MicroservicesApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.RegistryServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SecurityModuleApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;changes&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Tony/Desktop/spring-microservices/security-module/src/main/java/com/tony/security_module/core&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -140,8 +146,8 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestTravelService.shouldUpdateTravelDriverId">
-    <configuration name="TestTokenProvider.shouldCreateAccessTokenSuccessfully" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestDriverService">
+    <configuration name="TestDriverService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -152,9 +158,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":user-microservice:test" />
+            <option value=":driver-microservice:test" />
             <option value="--tests" />
-            <option value="&quot;com.tony.user_microservice.utils.TestTokenProvider.shouldCreateAccessTokenSuccessfully&quot;" />
+            <option value="&quot;com.tony.microservices.service.TestDriverService&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,7 +171,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTravelService.shouldUpdateTravelDriverId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestDriverService.shouldCreateDriverSuccessfully" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,9 +182,57 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":booking-microservice:test" />
+            <option value=":driver-microservice:test" />
             <option value="--tests" />
-            <option value="&quot;com.tony.booking_microservice.service.TestTravelService.shouldUpdateTravelDriverId&quot;" />
+            <option value="&quot;com.tony.microservices.service.TestDriverService.shouldCreateDriverSuccessfully&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDriverService.shouldThrowBussinessExceptionWhenCreateDriverWithExistingName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":driver-microservice:test" />
+            <option value="--tests" />
+            <option value="&quot;com.tony.microservices.service.TestDriverService.shouldThrowBussinessExceptionWhenCreateDriverWithExistingName&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDriverService.whenChangeAvaiabilityThenUpdateDriverStatus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":driver-microservice:test" />
+            <option value="--tests" />
+            <option value="&quot;com.tony.microservices.service.TestDriverService.whenChangeAvaiabilityThenUpdateDriverStatus&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -287,9 +341,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.TestTravelService.shouldUpdateTravelDriverId" />
-      <item itemvalue="Gradle.TestTokenProvider.shouldCreateAccessTokenSuccessfully" />
+      <item itemvalue="Gradle.TestDriverService" />
+      <item itemvalue="Gradle.TestDriverService.shouldCreateDriverSuccessfully" />
+      <item itemvalue="Gradle.TestDriverService.shouldThrowBussinessExceptionWhenCreateDriverWithExistingName" />
+      <item itemvalue="Gradle.TestDriverService.whenChangeAvaiabilityThenUpdateDriverStatus" />
       <item itemvalue="Gradle.TestUserService" />
+      <item itemvalue="Spring Boot.RegistryServiceApplication" />
       <item itemvalue="Spring Boot.OrchestratorServiceApplication" />
       <item itemvalue="Spring Boot.AdminServerApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -297,13 +354,14 @@
       <item itemvalue="Spring Boot.BookingMicroserviceApplication" />
       <item itemvalue="Spring Boot.ClientMicroserviceApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="Spring Boot.RegistryServiceApplication" />
       <item itemvalue="Spring Boot.SecurityModuleApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestTravelService.shouldUpdateTravelDriverId" />
-        <item itemvalue="Gradle.TestTokenProvider.shouldCreateAccessTokenSuccessfully" />
+        <item itemvalue="Gradle.TestDriverService" />
+        <item itemvalue="Gradle.TestDriverService.whenChangeAvaiabilityThenUpdateDriverStatus" />
+        <item itemvalue="Gradle.TestDriverService.shouldCreateDriverSuccessfully" />
+        <item itemvalue="Gradle.TestDriverService.shouldThrowBussinessExceptionWhenCreateDriverWithExistingName" />
         <item itemvalue="Gradle.TestUserService" />
       </list>
     </recent_temporary>
@@ -367,9 +425,22 @@
       <workItem from="1779870760204" duration="5521000" />
       <workItem from="1779887275412" duration="4293000" />
       <workItem from="1779977753702" duration="2786000" />
-      <workItem from="1780003770571" duration="960000" />
+      <workItem from="1780003770571" duration="6624000" />
+      <workItem from="1780060741328" duration="10691000" />
+      <workItem from="1780145544086" duration="9459000" />
+      <workItem from="1780278898685" duration="5269000" />
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/microservices$ClientMicroserviceApplication.ic" NAME="ClientMicroserviceApplication Coverage Results" MODIFIED="1779473962340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

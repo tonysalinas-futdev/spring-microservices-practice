@@ -45,3 +45,26 @@ management:
 
 jwt:
   public-key: ${JWT_PUBLIC_KEY}
+
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      user-microservice:
+        register-health-indicator: true
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 5
+        minimum-number-of-calls: 4
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state:
+          seconds: 5
+        permitted-number-of-calls-in-half-open-state: 2
+        sliding-window-size: 10
+        sliding-window-type: COUNT_BASED
+  retry:
+    instances:
+      user-microservice:
+        max-attempts: 4
+        wait-duration:
+          seconds: 10

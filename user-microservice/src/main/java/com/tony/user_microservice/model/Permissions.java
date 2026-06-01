@@ -9,6 +9,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -29,7 +30,7 @@ public class Permissions {
     @JoinTable(name = "role_permission",joinColumns = @JoinColumn(name="permission_id"),
     inverseJoinColumns = @JoinColumn(name ="role_id"))
     @JsonIgnore
-    private Set<Roles> roles;
+    private List<Roles> roles;
 
 
 }

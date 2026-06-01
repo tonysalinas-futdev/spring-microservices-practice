@@ -3,6 +3,7 @@ package com.tony.user_microservice.services;
 import com.tony.user_microservice.dtos.AdminCreateUserDTO;
 import com.tony.user_microservice.enums.Role;
 import com.tony.user_microservice.exceptions.UserCreationError;
+import com.tony.user_microservice.exceptions.UserOperationException;
 import com.tony.user_microservice.model.User;
 import com.tony.user_microservice.repository.UserRepository;
 import jakarta.validation.ConstraintViolationException;
@@ -22,6 +23,9 @@ public class TestUserService {
     @Autowired
     private UserRepository repo;
 
+    @Autowired
+    private RoleService roleService;
+
 
     @Test
     void shouldCreateUserByAdminSuccessfully(){
@@ -34,6 +38,7 @@ public class TestUserService {
                 .build();
         User user=service.createUserByAdmin(dto);
 
+        Assertions.assertTrue(user.getRoles().stream().anyMatch(role->role.getName().equals(Role.CLIENT)));
         Assertions.assertEquals(dto.getFullName(),user.getFullName());
     }
 
@@ -47,7 +52,7 @@ public class TestUserService {
                 .password("Abc12345#sd")
                 .build();
 
-        User user= service.createUserByAdmin(dto);
+         service.createUserByAdmin(dto);
 
         Assertions.assertThrows(UserCreationError.class, ()->service.createUserByAdmin(dto));
 
@@ -63,6 +68,37 @@ public class TestUserService {
                 .build();
         Assertions.assertThrows(ConstraintViolationException.class, ()->service.createUserByAdmin(dto));
 
+    }
+
+    @Test
+    void shouldAddNewRoleToUser(){
+        AdminCreateUserDTO dto=AdminCreateUserDTO.builder()
+                .fullName("Juan Antonio Chao Salinas")
+                .email("email@gmail.com")
+                .age(20)
+                .role(Role.CLIENT)
+                .password("Abc12345#sd")
+                .build();
+        User user= service.createUserByAdmin(dto);
+        User updatedUser=service.addRole(Role.DRIVER,user.getId());
+
+        Assertions.assertEquals(2,updatedUser.getRoles().size());
+
+    }
+
+    @Test
+    void shouldFailAddExistingRoleToUser(){
+        AdminCreateUserDTO dto=AdminCreateUserDTO.builder()
+                .fullName("Juan Antonio Chao Salinas")
+                .email("email@gmail.com")
+                .age(20)
+                .role(Role.CLIENT)
+                .password("Abc12345#sd")
+                .build();
+        User user= service.createUserByAdmin(dto);
+
+
+        Assertions.assertThrows(UserOperationException.class,()->service.addRole(Role.CLIENT,user.getId()));
 
     }
 }

@@ -38,10 +38,10 @@ public class ReactiveJwtConfig {
     public ReactiveJwtAuthenticationConverterAdapter reactiveJwtAuthenticationConverterAdapter(){
         JwtAuthenticationConverter converter=new JwtAuthenticationConverter();
         converter.setJwtGrantedAuthoritiesConverter(jwt->{
-            String role=jwt.getClaim("role");
+            List<String> roles=jwt.getClaim("roles");
             List<String> permissions=jwt.getClaim("permissions");
             List<GrantedAuthority> authorities=new ArrayList<>();
-            authorities.add(new SimpleGrantedAuthority("ROLE_"+role));
+            roles.forEach(r->authorities.add(new SimpleGrantedAuthority("ROLE_"+r)));
             permissions.forEach(p->authorities.add(new SimpleGrantedAuthority(p)));
             return authorities;
         });

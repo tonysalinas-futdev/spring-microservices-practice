@@ -24,8 +24,7 @@ import java.util.Base64;
 public class ClientMicroserviceApplication {
 
 	public static void main(String[] args){
-        PasswordEncoder passwordEncoder= new BCryptPasswordEncoder();
-        System.out.println(passwordEncoder.encode( "abcdd1234#"));
+
         SpringApplication.run(ClientMicroserviceApplication.class, args);
 
 	}

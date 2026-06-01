@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 
 @Table(name = "users")
@@ -45,9 +46,10 @@ public class User {
     @Builder.Default
     private Boolean credentialsNoExpired=true;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "role_id")
-    private Roles rol;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "role_user",joinColumns = @JoinColumn(name="user_id"),
+            inverseJoinColumns = @JoinColumn(name ="role_id"))
+    private Set<Roles> roles;
 
 
 }
