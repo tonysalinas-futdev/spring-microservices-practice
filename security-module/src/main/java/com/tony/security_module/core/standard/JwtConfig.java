@@ -1,7 +1,7 @@
 package com.tony.security_module.core.standard;
 
-import com.tony.security_module.core.JwtProperties;
-import com.tony.security_module.core.PublicRSABase64KeyDecoder;
+import com.tony.security_module.shared.JwtProperties;
+import com.tony.security_module.shared.PublicRSABase64KeyDecoder;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

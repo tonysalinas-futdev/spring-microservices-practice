@@ -7,7 +7,7 @@ Forma parte del proyecto de práctica con microservicios en **Spring Boot** y **
 
 ## 🎯 Objetivo
 - Centralizar la gestión de datos de usuarios.
-- Proveer endpoints REST para operaciones CRUD y autenticación.
+- Proveer endpoints REST para operaciones CRUD y autenticación utilizando JWT con RSA(LA CLAVE DEBE ESTAR EN BASE 64 ).
 - Manejar roles y permisos (Client, Admin, Driver).
 - Servir como base para la integración con otros microservicios (reservas, autenticación).
 
@@ -40,4 +40,4 @@ Desde la carpeta del microservicio:
 ./gradlew bootRun
 
 ## Ver documentación de swagger
-http://localhost:8020/swagger-ui/index.html
+http://localhost:8054/swagger-ui/index.html

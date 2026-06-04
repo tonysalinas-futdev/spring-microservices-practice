@@ -1,4 +1,4 @@
-package com.tony.security_module.core;
+package com.tony.security_module.shared;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

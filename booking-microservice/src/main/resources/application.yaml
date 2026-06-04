@@ -13,12 +13,3 @@ spring:
 server:
   port: 8084
 
-resilience4j:
-  timelimiter:
-    instances:
-      driver-mciroservice:
-        timeout-duration:
-          seconds: 10
-        cancel-running-future: true
-
-

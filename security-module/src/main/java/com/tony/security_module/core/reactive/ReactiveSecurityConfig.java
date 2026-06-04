@@ -1,6 +1,6 @@
 package com.tony.security_module.core.reactive;
 
-import com.tony.security_module.core.PublicRoutes;
+import com.tony.security_module.shared.PublicRoutes;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,11 @@ public SecurityWebFilterChain publicChain(ServerHttpSecurity http, ReactiveJwtAu
             .httpBasic(ServerHttpSecurity.HttpBasicSpec::disable)
             .logout(ServerHttpSecurity.LogoutSpec::disable)
 
-            .authorizeExchange(ex -> ex.pathMatchers("/user-microservice/api/v1/auth/**", PublicRoutes.ACTUATOR).permitAll().anyExchange().authenticated())
+            .authorizeExchange(ex -> ex.pathMatchers(PublicRoutes.AUTH, PublicRoutes.ACTUATOR,                        PublicRoutes.SWAGGER_API_DOCS,
+                    PublicRoutes.SWAGGER_RESOURCES,
+                    PublicRoutes.SWAGGER_UI,
+                    PublicRoutes.SWAGGER_UI_HTML,
+                    PublicRoutes.WEBJARS).permitAll().anyExchange().authenticated())
             .oauth2ResourceServer(oauth -> oauth.jwt(jwt->jwt.jwtAuthenticationConverter(converter))).build();
 }
 

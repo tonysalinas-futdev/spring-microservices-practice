@@ -11,9 +11,3 @@ spring:
   config:
     import: optional:configserver:http://localhost:8099,optional:file:./driver-microservice/.env[.properties],optional:file:./.env[.properties]
 
-  boot:
-    admin:
-      client:
-        url: http://localhost:8444
-        instance:
-          service-host-type: ip

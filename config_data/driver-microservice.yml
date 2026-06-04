@@ -24,6 +24,13 @@ spring:
         show_sql: true
         use_sql_comments: false
         format_sql: false
+  boot:
+    admin:
+      client:
+        url: http://localhost:8444
+        instance:
+          service-host-type: ip
+
 
 logging:
   pattern:

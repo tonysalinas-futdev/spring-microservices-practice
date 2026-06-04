@@ -1,4 +1,4 @@
-package com.tony.security_module.core;
+package com.tony.security_module.shared;
 
 import org.springframework.security.oauth2.jwt.JwtException;
 
